@@ -4,7 +4,41 @@
     <title>Ghiblipedia</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body style="background-size: 100%;">
+
+  <body id="homepage">
+    <div id="bg-black"></div>
+
+    <header id="header-hp">
+      <div id="logo">
+        <a href="index.html"><img src="img/sgdb-logo.png" alt="Studio Ghibli Database Logo"></a>
+      </div>
+      <nav id="nav-bar">
+        <a href="#">MOVIES</a>
+        <a href="#">CHARACTERS</a>
+        <a href="#">LOCATIONS</a>
+      </nav>
+    </header>
+
+    <main>
+        <div id="description">
+          <h1>Welcome to the Studio Ghibli Database!</h1>
+          <p>Click on the links above to look at your favorite movies, characters and locations.<br> Or use the searchbar below to look for something specific.</p>
+          <form action="#">
+            <input type="text">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+    </main>
+    
+    <footer>
+      <p>&copy; Vanessa Rodríguez y Jazmín Grajales. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="data.js" type="module"></script>
+  </body>
+
+  <!-- <body style="background-size: 100%;">
     <div id="welcome"></div>
     <h1>Welcome to the Studio Ghibli Database!</h1>
     <p>Click on the links above to look at your favorite movies, characters and locations.</p>
@@ -17,5 +51,5 @@
     <div id="films-container" style="display:none"></div>
     <footer>&copy; Vanessa Rodríguez y Jazmín Grajales. Todos los derechos reservados.</footer>
     <script src="data.js" type="module"></script>
-  </body>
+  </body> -->
 </html>

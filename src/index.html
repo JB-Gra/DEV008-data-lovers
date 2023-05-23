@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DataLovers-Ghiblipedia</title>
+    <title>Ghiblipedia</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <h1>Films Studio Ghibli</h1>
-    <div id="films-container"></div>
+  <body style="background-size: 100%;">
+    <div id="welcome"></div>
+    <h1>Welcome to the Studio Ghibli Database!</h1>
+    <p>Click on the links above to look at your favorite movies, characters and locations.</p>
+    <p>Or use the searchbar below to look for something specific.</p>
+    <div id="buttons-container">
+      <button id="movies-button">MOVIES</button>
+      <button id="characters-button">CHARACTERS</button>
+      <button id="locations-button">LOCATIONS</button>
+    </div>
+    <div id="films-container" style="display:none"></div>
+    <footer>&copy; Vanessa Rodríguez y Jazmín Grajales. Todos los derechos reservados.</footer>
     <script src="data.js" type="module"></script>
-    <script src="main.js" type="module"></script> 
+    <script src="main.js" type="module"></script>
   </body>
 </html>

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ghiblipedia</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli Database</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -13,19 +16,19 @@
         <a href="index.html"><img src="img/sgdb-logo.png" alt="Studio Ghibli Database Logo"></a>
       </div>
       <nav id="nav-bar">
-        <a href="#">MOVIES</a>
-        <a href="#">CHARACTERS</a>
-        <a href="#">LOCATIONS</a>
+        <a href="container.html">MOVIES</a>
+        <a href="container.html">CHARACTERS</a>
+        <a href="container.html">LOCATIONS</a>
       </nav>
     </header>
 
     <main>
-        <div id="description">
-          <h1>Welcome to the Studio Ghibli Database!</h1>
-          <p>Click on the links above to look at your favorite movies, characters and locations.<br> Or use the searchbar below to look for something specific.</p>
+        <div id="container">
+          <h1 id="welcome">Welcome to the Studio Ghibli Database!</h1>
+          <p id="description">Click on the links above to look at your favorite movies, characters and locations.<br> Or use the searchbar below to look for something specific.</p>
           <form action="#">
-            <input type="text">
-            <button type="submit">Search</button>
+            <input type="text" placeholder="I.e: Spirited Away, Haku, Zeniba's House">
+            <button type="submit" id="search">Search</button>
           </form>
         </div>
     </main>
@@ -34,6 +37,7 @@
       <p>&copy; Vanessa Rodríguez y Jazmín Grajales. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- <div id="root"></div> -->
     <!-- Script -->
     <script src="data.js" type="module"></script>
   </body>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-  --white-font: #fff;
+  --white-text: #fff;
 }
 
 *, *::before, *::after {
@@ -11,30 +11,53 @@
   font-family: 'Cabin', sans-serif;
 }
 
-#homepage {
-  color: var(--white-font);
+#homepage,
+#data-page {
+  color: var(--white-text);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   height: 100vh;
+}
+
+#homepage {
   background: url(howl.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #header-hp {
+  width: 100vw;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
 }
 
 #logo img {
-  width: 8em;
+  width: 8rem;
 }
+
+/* Navegación */
 
 #nav-bar a {
   text-decoration: none;
   color: inherit;
+  padding: 0.5rem 0.8rem;
 }
+
+#nav-bar a:hover {
+  background-color: #fff;
+  color: #000;
+  border-radius: 16px;
+}
+
+.nav-blue {
+  background-color: #6A839A;
+}
+
+/* Capa negra con opacidad reducida */
 
 #bg-black {
   position: fixed;
@@ -44,9 +67,56 @@
   z-index: -1; /* sin esto la letra también se me pone opaca*/
 }
 
-footer {
-  position: absolute;
-  bottom: 8px;
+#container {
+  height: 20rem;
+  margin: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#welcome, #description {
+  padding-bottom: 1.2rem;
+}
+
+#welcome {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+#description {
+  font-size: 1.2rem;
+}
+
+input[type=text] {
+  width: 20rem;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  border-radius: 12px;
+  margin-right: 0.4rem;
+}
+
+input[type=text]::placeholder {
+  font-style: italic;
+  color: #969696;
+}
+
+#search {
+  padding: 0.4rem 2rem;
+  font-size: 1rem;
+  background-color: #584A6A;
+  color: var(--white-text);
+  border: none;
+  border-radius: 12px;
+}
+
+#search:hover {
+  background-color: #6A839A;
+}
+
+footer p {
+  margin: 0.8rem 0;
 }
 
 /* body{

@@ -8,52 +8,25 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body id="homepage">
-    <div id="bg-black"></div>
+  <body id="container">
 
-    <header id="header-hp">
+    <header id="header">
       <div id="logo">
-        <a href="index.html"><img src="img/sgdb-logo.png" alt="Studio Ghibli Database Logo"></a>
+        <img src="img/sgdb-logo.png" alt="Studio Ghibli Database Logo">
       </div>
-      <nav id="nav-bar">
-        <a href="container.html">MOVIES</a>
-        <a href="container.html">CHARACTERS</a>
-        <a href="container.html">LOCATIONS</a>
-      </nav>
     </header>
 
     <main>
-        <div id="container">
-          <h1 id="welcome">Welcome to the Studio Ghibli Database!</h1>
-          <p id="description">Click on the links above to look at your favorite movies, characters and locations.<br> Or use the searchbar below to look for something specific.</p>
-          <form action="#">
-            <input type="text" placeholder="I.e: Spirited Away, Haku, Zeniba's House">
-            <button type="submit" id="search">Search</button>
-          </form>
-        </div>
+      <div id="movie-container"></div>
     </main>
     
+    <div id="root"></div>
     <footer>
-      <p>&copy; Vanessa Rodríguez y Jazmín Grajales. Todos los derechos reservados.</p>
+      <p>&copy; 2023 Jazmín Grajales.</p>
     </footer>
 
-    <!-- <div id="root"></div> -->
     <!-- Script -->
-    <script src="data.js" type="module"></script>
+    <script src="main.js" type="module"></script>
   </body>
 
-  <!-- <body style="background-size: 100%;">
-    <div id="welcome"></div>
-    <h1>Welcome to the Studio Ghibli Database!</h1>
-    <p>Click on the links above to look at your favorite movies, characters and locations.</p>
-    <p>Or use the searchbar below to look for something specific.</p>
-    <div id="buttons-container">
-      <button id="movies-button">MOVIES</button>
-      <button id="characters-button">CHARACTERS</button>
-      <button id="locations-button">LOCATIONS</button>
-    </div>
-    <div id="films-container" style="display:none"></div>
-    <footer>&copy; Vanessa Rodríguez y Jazmín Grajales. Todos los derechos reservados.</footer>
-    <script src="data.js" type="module"></script>
-  </body> -->
 </html>

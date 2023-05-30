@@ -11,153 +11,56 @@
   font-family: 'Cabin', sans-serif;
 }
 
-#homepage,
-#data-page {
-  color: var(--white-text);
+#container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #F9F9ED;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
 }
 
-#homepage {
-  background: url(howl.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-#header-hp {
+#header {
   width: 100vw;
+  padding: 0.8rem 0;
+  background-color: #12766A;
+}
+
+#logo {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 3rem;
+  justify-content: center;
 }
 
 #logo img {
-  width: 8rem;
+  height: 40px;
 }
 
-/* Navegación */
+/* movie container: start */
 
-#nav-bar a {
-  text-decoration: none;
-  color: inherit;
-  padding: 0.5rem 0.8rem;
-}
-
-#nav-bar a:hover {
-  background-color: #fff;
-  color: #000;
-  border-radius: 16px;
-}
-
-.nav-blue {
-  background-color: #6A839A;
-}
-
-/* Capa negra con opacidad reducida */
-
-#bg-black {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Ajusta el valor de la opacidad aquí */
-  z-index: -1; /* sin esto la letra también se me pone opaca*/
-}
-
-#container {
-  height: 20rem;
-  margin: 6rem 0;
+#movie-container {
+  width: 100vw;
+  margin: 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#welcome, #description {
-  padding-bottom: 1.2rem;
-}
-
-#welcome {
-  font-size: 3rem;
-  font-weight: 300;
-}
-
-#description {
-  font-size: 1.2rem;
-}
-
-input[type=text] {
-  width: 20rem;
-  padding: 0.4rem 0.6rem;
-  border: none;
-  border-radius: 12px;
-  margin-right: 0.4rem;
-}
-
-input[type=text]::placeholder {
-  font-style: italic;
-  color: #969696;
-}
-
-#search {
-  padding: 0.4rem 2rem;
-  font-size: 1rem;
-  background-color: #584A6A;
-  color: var(--white-text);
-  border: none;
-  border-radius: 12px;
-}
-
-#search:hover {
-  background-color: #6A839A;
-}
-
-footer p {
-  margin: 0.8rem 0;
-}
-
-/* body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  height: 100vh;
-  background: url(howl.jpg);
-  background-size: cover;
-  margin: 0;
-  background-position: center;
-  text-align: center;
-  font-size: 20px;
-  line-height: 1.6;
-  color: #f5efef;
 }
-#welcome{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); ==Ajusta el valor de la opacidad aquí==
-  z-index: -1; ==sin esto la letra también se me pone opaca==
+
+.movie-poster {
+  height: 16rem;
+  width: 11rem;
+  padding: 1rem;
 }
-#buttons-container {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-#movies-button,
-#characters-button, #locations-button{
-  margin-left: 10px;
-  border: none;
-  background: none;
-  padding: 0; ==Eliminar espacio interno==
-  font-size: 18px;
-  color: #f5efef;
-}
+
+/* movie container: end */
+
 footer {
-  position: absolute;
-  bottom: 8px;
-  color: white;
-  font-size: 14px;
-} */
+  width: 100vw;
+  background-color: #190F10;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem 0;
+}

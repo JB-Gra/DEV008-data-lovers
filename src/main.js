@@ -1,17 +1,17 @@
-import { getFilms } from './data.js';
+import { ghibliData } from './data.js';
 
-const films = getFilms();
-console.log(films);
-const filmsContainer = document.getElementById('films-container');
-const filmList = films.map(film => { // Para que para todas las peliculas me retorne lo mismo, en este caso es el titulo, la foto y el año
-    return `
-      <div>
-        <h2>${film.title}</h2>
-        <img src="${film.poster}" alt="${film.title} Poster">
-        <p>${film.release_date}</p>
-        </div>
-        `;
-      }).join(''); // El resultado de .map() es un array de fragmentos HTML. Para mostrarlos correctamente en la interfaz, necesitamos combinarlos en una sola cadena de texto. Es aquí donde entra en juego el método .join('').
-    
-      // Agrega el contenido HTML al elemento <div>
-    filmsContainer.innerHTML = filmList; // Para meterle al div la lista que hicimos.
+// import data from './data/lol/lol.js';
+// import data from './data/pokemon/pokemon.js';
+// import data from './data/rickandmorty/rickandmorty.js';
+
+console.log(ghibliData);
+
+const movieList = ghibliData();
+const movieContainer = document.querySelector('#movie-container');
+
+console.log(movieList);
+
+for (let i = 0; i < movieList.length; i++) {
+  const moviePosters = `<img class="movie-poster" src="${movieList[i].poster}" alt="${movieList[i].title} poster" />`
+  movieContainer.innerHTML += moviePosters;
+}

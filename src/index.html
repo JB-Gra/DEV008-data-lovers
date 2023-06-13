@@ -17,6 +17,15 @@
     </header>
 
     <main>
+      <div id="filter-container">
+        <label for="movie-filters">Order by:</label>
+        <select name="movies" id="movie-filters">
+          <option value="" selected="true" disabled="disabled">--Alphabetical Order--</option>
+          <option value="sort-ascending">Ascending</option>
+          <option value="sort-descending">Descending</option>
+        </select>
+      </div>
+
       <div id="movie-container"></div>
     </main>
     

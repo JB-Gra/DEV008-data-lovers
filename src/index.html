@@ -17,13 +17,33 @@
     </header>
 
     <main>
-      <div id="filter-container">
-        <label for="movie-filters">Order by:</label>
-        <select name="movies" id="movie-filters">
-          <option value="" selected="true" disabled="disabled">--Alphabetical Order--</option>
-          <option value="sort-ascending">Ascending</option>
-          <option value="sort-descending">Descending</option>
-        </select>
+      <!-- sorting goes here -->
+      <div class="sort-filter">
+        <div id="order-container">
+          <label for="movie-sort">Order by:</label>
+          <select name="movies" id="movie-sort" class="select-menu">
+            <option value="" selected="true" disabled="disabled">Alphabetical order</option>
+            <option value="alphabet-ascending">Ascending</option>
+            <option value="alphabet-descending">Descending</option>
+            <option value="" disabled="disabled">Year of release</option>
+            <option value="year-ascending">Ascending</option>
+            <option value="year-descending">Descending</option>
+          </select>
+        </div>
+
+        <!-- filter goes here -->
+        <div id="filter-container">
+          <label for="movie-filter">Filter by:</label>
+          <select name="movies" id="movie-filter" class="select-menu">
+            <option value="" selected="true" disabled="disabled">Directors</option>
+            <option value="yoshifumi-kondo">Yoshifumi Kondo</option>
+            <option value="goro-miyazaki">Goro Miyazaki</option>
+            <option value="hayao-miyazaki">Hayao Miyazaki</option>
+            <option value="hiroyuki-morita">Hiroyuki Morita</option>
+            <option value="isao-takahata">Isao Takahata</option>
+            <option value="hiromasa-yonebayashi">Hiromasa Yonebayashi</option>
+          </select>
+        </div>
       </div>
 
       <div id="movie-container"></div>

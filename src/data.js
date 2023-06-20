@@ -15,6 +15,7 @@ export const ghibliData = () => {
 export const sortMovies = {
   sortOrder: function (orderSelect, movies) {
     if (orderSelect === "alphabet-descending") {
+      // a[sortBy] < b[sortBy]
       movies.sort(function (a, b) {
         if (a.title.replace(/^The /, "") < b.title.replace(/^The /, "")) {
           return -1;
@@ -68,3 +69,24 @@ export const sortMovies = {
 // ===========================
 // Filter function by director
 // ===========================
+
+export const filterMovies =  {
+  filterDirectors: function (optionValue, movies) {
+    const directorFilter = movies.filter(movie => movie.director.includes(optionValue));
+    // if (optionValue === "Hayao Miyazaki") {
+    //   return movies.filter(movie => movie.director.includes("Hayao Miyazaki"));
+    // } else if (optionValue === "Isao Takahata") {
+    //   return movies.filter(movie => movie.director.includes("Isao Takahata"));
+    // } else if (optionValue === "Gorō Miyazaki") {
+    //   return movies.filter(movie => movie.director.includes("Gorō Miyazaki"));
+    // } else if (optionValue === "Yoshifumi Kondō") {
+    //   return movies.filter(movie => movie.director.includes("Yoshifumi Kondō"));
+    // } else if (optionValue === "Hiroyuki Morita") {
+    //   return movies.filter(movie => movie.director.includes("Hiroyuki Morita"));
+    // } else if (optionValue === "Hiromasa Yonebayashi") {
+    //   return movies.filter(movie => movie.director.includes("Hiromasa Yonebayashi"));
+    // }
+    // return movies;
+    return directorFilter;
+  }
+};

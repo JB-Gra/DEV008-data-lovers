@@ -8,6 +8,17 @@ export const ghibliData = () => {
   return data.films;
 };
 
+// ===========================
+// Filter function by director
+// ===========================
+
+export const filterMovies =  {
+  filterDirectors: function (optionValue, movies) {
+    const directorFilter = movies.filter(movie => movie.director.includes(optionValue));
+    return directorFilter;
+  }
+};
+
 // ========================================================
 // Sorting function by alphabetical order & year of release
 // ========================================================
@@ -24,9 +35,9 @@ export const sortMovies = {
           return 1;
         }
         return 0;
-        })
-        return movies;
-      };
+      })
+      return movies;
+    }
     if (orderSelect === "alphabet-ascending") {
       movies.sort(function (a, b) {
         if (a.title.replace(/^The /, "") > b.title.replace(/^The /, "")) {
@@ -36,7 +47,7 @@ export const sortMovies = {
           return 1;
         }
         return 0;
-        })
+      })
       return movies;
     }
     if (orderSelect === "year-descending") {
@@ -48,9 +59,9 @@ export const sortMovies = {
           return 1;
         }
         return 0;
-        })
-        return movies;
-      };
+      })
+      return movies;
+    }
     if (orderSelect === "year-ascending") {
       movies.sort(function (a, b) {
         if (a.release_date > b.release_date) {
@@ -60,33 +71,8 @@ export const sortMovies = {
           return 1;
         }
         return 0;
-        })
+      })
       return movies;
     }
-  }
-};
-
-// ===========================
-// Filter function by director
-// ===========================
-
-export const filterMovies =  {
-  filterDirectors: function (optionValue, movies) {
-    const directorFilter = movies.filter(movie => movie.director.includes(optionValue));
-    // if (optionValue === "Hayao Miyazaki") {
-    //   return movies.filter(movie => movie.director.includes("Hayao Miyazaki"));
-    // } else if (optionValue === "Isao Takahata") {
-    //   return movies.filter(movie => movie.director.includes("Isao Takahata"));
-    // } else if (optionValue === "Gorō Miyazaki") {
-    //   return movies.filter(movie => movie.director.includes("Gorō Miyazaki"));
-    // } else if (optionValue === "Yoshifumi Kondō") {
-    //   return movies.filter(movie => movie.director.includes("Yoshifumi Kondō"));
-    // } else if (optionValue === "Hiroyuki Morita") {
-    //   return movies.filter(movie => movie.director.includes("Hiroyuki Morita"));
-    // } else if (optionValue === "Hiromasa Yonebayashi") {
-    //   return movies.filter(movie => movie.director.includes("Hiromasa Yonebayashi"));
-    // }
-    // return movies;
-    return directorFilter;
   }
 };

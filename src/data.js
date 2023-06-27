@@ -24,55 +24,22 @@ export const filterMovies =  {
 // ========================================================
 
 export const sortMovies = {
-  sortOrder: function (orderSelect, movies) {
-    if (orderSelect === "alphabet-descending") {
-      // a[sortBy] < b[sortBy]
-      movies.sort(function (a, b) {
-        if (a.title.replace(/^The /, "") < b.title.replace(/^The /, "")) {
-          return -1;
-        }
-        if (a.title.replace(/^The /, "") > b.title.replace(/^The /, "")) {
-          return 1;
-        }
-        return 0;
-      })
-      return movies;
-    }
-    if (orderSelect === "alphabet-ascending") {
-      movies.sort(function (a, b) {
-        if (a.title.replace(/^The /, "") > b.title.replace(/^The /, "")) {
-          return -1;
-        }
-        if (a.title.replace(/^The /, "") < b.title.replace(/^The /, "")) {
-          return 1;
-        }
-        return 0;
-      })
-      return movies;
-    }
-    if (orderSelect === "year-descending") {
-      movies.sort(function (a, b) {
-        if (a.release_date < b.release_date) {
-          return -1;
-        }
-        if (a.release_date > b.release_date) {
-          return 1;
-        }
-        return 0;
-      })
-      return movies;
-    }
-    if (orderSelect === "year-ascending") {
-      movies.sort(function (a, b) {
-        if (a.release_date > b.release_date) {
-          return -1;
-        }
-        if (a.release_date < b.release_date) {
-          return 1;
-        }
-        return 0;
-      })
-      return movies;
-    }
+  sortOrder: function (movies, sortBy, sortOrder) {
+    movies.sort((a,b) => {
+      let compare = 0;
+      
+      if (a[sortBy] > b[sortBy]) {
+        compare = 1;
+      } else if (a[sortBy] < b[sortBy]) {
+        compare = -1;
+      }
+      if (sortOrder === "desc-year" || sortOrder === "desc-alphabet") {
+        compare *= -1;
+      }
+
+      return compare;
+    })
+
+    return movies;
   }
 };

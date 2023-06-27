@@ -66,6 +66,15 @@ option:disabled {
 
 /* sort & filter container: end */
 
+.btn {
+  padding: 0.4rem 0.5rem;
+  background-color: #12766A;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  margin-left: 1.2rem;
+}
+
 /* movie container: start */
 
 #movie-container {

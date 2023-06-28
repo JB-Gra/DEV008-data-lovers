@@ -23,7 +23,7 @@ console.log(filterTypes);
 
 const showMovies = function(dataMovie) {
   for (let i = 0; i < dataMovie.length; i++) {
-    const moviePosters = `<figure class="movie-poster"><img class="poster-img" src="${dataMovie[i].poster}" alt="${dataMovie[i].title} poster" /><figcaption class="img-caption">${dataMovie[i].title} (${dataMovie[i].release_date})</figcaption></figure>`;
+    const moviePosters = `<div class="movie-card"><h2 class="title">${dataMovie[i].title}</h2><div class="poster-description"><img src="${dataMovie[i].poster}" class="poster-img" /><div class="info"><h3 class="subtitle">Synopsis</h3><p class="description">"${dataMovie[i].description}"</p><p class="data"><span class="bold">Directed by: </span>${dataMovie[i].director}</p><p class="data"><span class="bold">Produced by: </span>${dataMovie[i].producer}</p></div></div></div>` 
     movieContainer.innerHTML += moviePosters;
   }
 };

@@ -54,33 +54,20 @@ describe('sortMovies', () => {
     });
   })
 
-  const movies = ghibliData();
-  const movieTitles = [
-    "Castle in the Sky",
-    "From Up on Poppy Hill",
-    "Grave of the Fireflies",
-    "Howl's Moving Castle",
-    "Kiki's Delivery Service",
-    "My Neighbor Totoro",
-    "My Neighbors the Yamadas",
-    "Only Yesterday",
-    "Pom Poko",
-    "Ponyo on the Cliff by the Sea",
-    "Porco Rosso",
-    "Princess Mononoke",
-    "Spirited Away",
-    "Tales from Earthsea",
-    "The Cat Returns",
-    "The Secret World of Arrietty",
-    "The Tale of the Princess Kaguya",
-    "The Wind Rises",
-    "When Marnie Was There",
-    "Whisper of the Heart"
+  const movies = [
+    {title: "Only Yesterday"},
+    {title: "Castle in the Sky"},
+    {title: "The Tale of the Princess Kaguya"}
+  ]
+  const orderedMovies = [
+    {title: "Castle in the Sky"},
+    {title: "Only Yesterday"},
+    {title: "The Tale of the Princess Kaguya"}
   ]
 
   describe('sortMovies', () => {
     it('Should return movies in alphabetical order & from A to Z', () => {
-      expect(sortMovies.sortOrder(movies.title, "title", "asc")).toEqual(movieTitles);
+      expect(sortMovies.sortOrder(movies, "title", "asc")).toEqual(orderedMovies);
     })
   })
 })

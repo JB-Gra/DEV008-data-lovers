@@ -20,37 +20,37 @@ La interfaz fue ideada para que se pudiera reproducir en diversas pantallas, por
 
 Se crearon cuatro historias de usuario para la realización de este proyecto, las cuales se detallan a continuación:
 
-**Historia de usuario 1**
+#### Historia de usuario 1
 
-Yo, como: _Fan de las películas de Ghibli_
+>Yo, como: _Fan de las películas de Ghibli_
+>
+>Quiero: _Una interfaz en la que pueda ver todas las películas_
+>
+>Para: _Poder navegar sin tener que cambiar de página_
 
-Quiero: _Una interfaz en la que pueda ver todas las películas_
+#### Historia de usuario 2
 
-Para: _Poder navegar sin tener que cambiar de página_
+>Yo, como: _Persona organizada que soy_
+>
+>Quiero: _Poder filtrar alfabéticamente las películas_
+>
+>Para: _Organizarlas mejor_
 
-**Historia de usuario 2**
+#### Historia de usuario 3
 
-Yo, como: _Persona organizada que soy_
+>Yo, como: _Estudiante de animación_
+>
+>Quiero: _Poder, además de filtrar alfabéticamente, filtrar por la fecha de lanzamiento en orden de más antigua a más reciente_
+>
+>Para: _Ver las películas conforme fueron saliendo y ver la evolución del estudio_
 
-Quiero: _Poder filtrar alfabéticamente las películas_
+#### Historia de usuario 4
 
-Para: _Organizarlas mejor_
-
-**Historia de usuario 3**
-
-Yo, como: _Estudiante de animación_
-
-Quiero: _Poder, además de filtrar alfabéticamente, filtrar por la fecha de lanzamiento en orden de más antigua a más reciente_
-
-Para: _Ver las películas conforme fueron saliendo y ver la evolución del estudio_
-
-**Historia de usuario 4**
-
-Yo, como: _Crítico de cine_
-
-Quiero: _Hacer un filtrado basado en quien dirigió cada película_
-
-Para: _Saber qué directores trabajaron en que_
+>Yo, como: _Crítico de cine_
+>
+>Quiero: _Hacer un filtrado basado en quien dirigió cada película_
+>
+>Para: _Saber qué directores trabajaron en que_
 
 ## Créditos
 
